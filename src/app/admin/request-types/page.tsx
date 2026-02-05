@@ -395,7 +395,7 @@ export default function RequestTypesPage() {
                     <Card key={subType._id} className="bg-white">
                       <div
                         className="flex items-center justify-between p-3 cursor-pointer"
-                        onClick={() => setExpandedSubType(expandedSubType === subType._id ? null : subType._id)}
+                        onClick={() => setExpandedSubType(expandedSubType === subType._id ? null : subType._id || null)}
                       >
                         <div className="flex items-center space-x-3 rtl:space-x-reverse">
                           <GripVertical className="w-4 h-4 text-gray-400" />
